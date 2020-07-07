@@ -43,13 +43,153 @@
   </header>
 
   <section class="hero">
-    <div class="banner-box">
-      BANNER
+    <div class="hero__banner-box">
+      <img class="hero__banner" src="./assets/banner.jpeg" alt="Workshop Banner">
     </div>
   </section>
 
-  <main class="main">
-    MAIN CONTENT
+  <main class="main container">
+    <section class="section-organizacion">
+      <div class="section-heading">
+        <h2 class="section-heading__title">Organización</h2>
+      </div>
+      <div class="organizacion__details margin-bottom-lg">
+        <p class="organizacion__paragraph">
+          Este año adelantamos a julio el clásico <strong>Workshop de Sistemas</strong>,
+          y lo hacemos en formato virtual, con <strong>exposiciones en vivo, videos e
+          invitados especiales</strong>.
+        </p>
+        <p class="organizacion__paragraph">
+          Son dos jornadas, <strong>miércoles 15 y jueves 16 de julio, de 18 a 21 hs.</strong>
+          No habrá talleres como en ediciones anteriores, pero agregamos como nueva propuesta
+          un <strong>torneo de eSports.</strong>
+        </p>
+        <p class="organizacion__paragraph">
+          Si bien no es imprescindible para presenciar el evento, nos interesa conocer quiénes
+          participan por lo que les pedimos que se inscriban.
+          Como siempre, haremos <strong>sorteos de premios sorpresa</strong> entre todos los inscriptos presentes. 
+        </p>
+      </div>
+      <a href="#" class="organizacion__transmision">
+        <img
+          class="organizacion__transmision--channel"
+          src="./assets/youtube.svg"
+          alt="Canal de Youtube"
+          onerror="this.src='./assets/youtube.png'"
+        />
+        <span class="organizacion__transmision--detail">
+          La transmisión de todo el evento se realizará a través de la plataforma YouTube
+        </span>
+      </a>
+    </section>
+
+    <section class="section-exposiciones">
+      <div class="section-heading">
+        <h2 class="section-heading__title">Exposiciones</h2>
+      </div>
+      <ul class="exposiciones">
+        <li class="exposicion">
+          <input type="checkbox" id="details-1" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Exposición 1</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Juan García</span>
+          </h3>
+          <label for="details-1" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>Lorems ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque architecto odio, vero tempora, laboriosam exercitationem quos cumque velit illo distinctio id numquam itaque aliquid aliquam qui est veritatis? Aspernatur expedita possimus aut doloremque enim et reiciendis eligendi soluta odit ducimus illum ipsum totam cupiditate earum, necessitatibus dolores facere officia quas corporis eos maxime consequuntur. Corrupti numquam, architecto consequatur dolore ipsum tempora alias blanditiis illo doloremque deserunt modi, rerum provident ab dicta? Dolore aliquid obcaecati hic iure laudantium corporis in.
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-2" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Exposición 2</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Daniel Rodríguez</span>
+          </h3>
+          <label for="details-2" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>Lorems ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque architecto odio, vero tempora, laboriosam exercitationem quos cumque velit illo distinctio id numquam itaque aliquid aliquam qui est veritatis? Aspernatur expedita possimus aut doloremque enim et reiciendis eligendi soluta odit ducimus illum ipsum totam cupiditate earum, necessitatibus dolores facere officia quas corporis eos maxime consequuntur. Corrupti numquam, architecto consequatur dolore ipsum tempora alias blanditiis illo doloremque deserunt modi, rerum provident ab dicta? Dolore aliquid obcaecati hic iure laudantium corporis in.
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-4" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Exposición 4</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Claudio Pérez</span>
+          </h3>
+          <label for="details-4" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>Lorems ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque architecto odio, vero tempora, laboriosam exercitationem quos cumque velit illo distinctio id numquam itaque aliquid aliquam qui est veritatis? Aspernatur expedita possimus aut doloremque enim et reiciendis eligendi soluta odit ducimus illum ipsum totam cupiditate earum, necessitatibus dolores facere officia quas corporis eos maxime consequuntur. Corrupti numquam, architecto consequatur dolore ipsum tempora alias blanditiis illo doloremque deserunt modi, rerum provident ab dicta? Dolore aliquid obcaecati hic iure laudantium corporis in.
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-5" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Exposición 5</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Néstor García</span>
+          </h3>
+          <label for="details-5" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>Lorems ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque architecto odio, vero tempora, laboriosam exercitationem quos cumque velit illo distinctio id numquam itaque aliquid aliquam qui est veritatis? Aspernatur expedita possimus aut doloremque enim et reiciendis eligendi soluta odit ducimus illum ipsum totam cupiditate earum, necessitatibus dolores facere officia quas corporis eos maxime consequuntur. Corrupti numquam, architecto consequatur dolore ipsum tempora alias blanditiis illo doloremque deserunt modi, rerum provident ab dicta? Dolore aliquid obcaecati hic iure laudantium corporis in.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section-contacto">
+      <div class="section-heading">
+        <h2 class="section-heading__title">Contacto</h2>
+      </div>
+      <div class="contacto">
+        <div class="contacto__group">
+          <form action="#" class="contacto__form">
+            <h4 class="contacto__form-heading">¡Envianos un mensaje!</h4>
+            <div class="contacto__form-wrapper">
+              <div class="contacto__form-group">
+                <label for="nombre" class="contacto__form-label">Nombre</label>
+                <input type="text" id="nombre" class="contacto__form-input">
+              </div>
+              <div class="contacto__form-group">
+                <label for="email" class="contacto__form-label">E-mail</label>
+                <input type="text" id="email" class="contacto__form-input">
+              </div>
+              <div class="contacto__form-group">
+                <label for="mensaje" class="contacto__form-label">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" class="contacto__form-textarea"></textarea>
+              </div>
+            </div>
+            <button class="contacto__form-btn">
+              Enviar
+            </button>
+          </form>
+        </div>
+        <div class="contacto__group">
+          <h3 class="contacto__heading">Facultad Regional Delta - Campana</h3>
+          <p class="contacto__paragraph">San Martin 1175, Campana, Buenos Aires, Argentina</p>
+          <p class="contacto__paragraph">Departamento de Ingeniería en Sistemas de Información</p>
+          <p class="contacto__paragraph">+54 3489 420400</p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    To do...
+  </footer>
 </body>
 </html>
