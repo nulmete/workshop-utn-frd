@@ -230,6 +230,52 @@ body {
   font-weight: 700;
 }
 
+/* Programa */
+.section-programa {
+  padding: 7rem 0;
+}
+
+.programa:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.programa__heading {
+  color: var(--default-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.programa__table-container {
+  overflow-x: auto;
+  box-shadow: var(--default-box-shadow);
+}
+
+.programa__table {
+  border-collapse: collapse;
+  border-radius: var(--default-border-radius);
+  color: var(--default-color);
+  font-size: 1.4rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.programa__table-head {
+  background-color: var(--default-hover);
+  color: var(--default-bg-color);
+}
+
+.programa__table-body tr:hover,
+.programa__table-body tr:focus,
+.programa__table-body tr:active {
+  background-color: rgb(243, 243, 243);
+}
+
+.programa__table th,
+.programa__table td {
+  padding: 1.2rem;
+  text-align: center;
+}
+
 /* Exposiciones */
 .section-exposiciones {
   padding: 7rem 0;
@@ -312,7 +358,47 @@ body {
   transform: rotate(180deg) translateY(2px);
 }
 
-/* Extra */
+/* Expositores */
+.section-expositores {
+  padding: 7rem 0;
+}
+
+.expositores:not(:last-child) {
+  margin-bottom: 7rem;
+}
+
+.expositores__heading {
+  color: var(--default-color);
+  font-size: 2.6rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.expositores__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 7rem;
+}
+
+.expositor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.expositor__img {
+  flex: 1;
+  display: block;
+  max-height: 100%;
+  width: 100%;
+}
+
+.expositor__caption {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Contacto */
 .section-contacto {
   padding: 7rem 0;
 }
