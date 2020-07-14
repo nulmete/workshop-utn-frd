@@ -1,0 +1,86 @@
+@import('./style.css');
+
+.csgo-hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+    url('./assets/csgo_banner_big.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.csgo-hero h1 {
+  color: var(--default-bg-color);
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+main {
+  font-size: 1.6rem;
+}
+
+.inscripciones {
+  padding: 10rem 0 5rem;
+  text-align: center;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.link:link,
+.link:visited {
+  border-radius: 10rem;
+  color: var(--default-bg-color);
+  display: inline-block;
+  font-weight: 300;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+
+.link--inscripcion {
+  background: #276a03;
+}
+
+.link--fecha {
+  background: #1d1eaa;
+}
+
+.inscripciones__text {
+  margin-top: 2.5rem;
+}
+
+.inscripciones__text > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.inscripciones__text a {
+  color: var(--default-hover);
+  text-decoration: none;
+}
+
+.fechas {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+/* At 400px */
+@media only screen and (max-width: 25em) {
+  .link-container {
+    flex-direction: column;
+  }
+
+  .link:not(:last-child) {
+    margin-bottom: 1.8rem;
+    margin-right: 0;
+  }
+}

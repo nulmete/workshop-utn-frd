@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/favicon.png">
   <title>UTN | FRD - Ciclo de Charlas y Talleres Gratuitos</title>
 </head>
 <body>
@@ -13,16 +14,21 @@
         <a href="/" class="header__logo">UTN | FRD</a>
       </div>
 
-      <nav class="header__nav nav">
+      <input type="checkbox" id="nav" class="nav-checkbox">
+      <label for="nav" class="nav-button">
+        <span class="nav-line"></span>
+      </label>
+
+      <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="./programa.html" class="nav__link">Programa</a>
+            <a href="#programa" class="nav__link">Programa</a>
           </li>
           <li class="nav__item">
-            <a href="./inscripciones.html" class="nav__link">Inscripciones</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScBvmwPXSyfgEsqQ8Eef_Kx-nPmfsKhWqC3je2c7W6bXeAgPw/viewform?embedded=true" class="nav__link">Inscripciones</a>
           </li>
           <li class="nav__item">
-            <a href="./torneo-csgo.html" class="nav__link">Torneo CS:GO</a>
+            <a href="./csgo.html" class="nav__link">Torneo CS:GO</a>
           </li>
           <li class="nav__item nav__item--expand">
             <a href="#" class="nav__link">
@@ -30,11 +36,31 @@
               <span class="arrow down"></span>
             </a>
             <ul class="ediciones-anteriores">
-              <li class="edicion"><a href="#" class="edicion__link">2015</a></li>
-              <li class="edicion"><a href="#" class="edicion__link">2016</a></li>
-              <li class="edicion"><a href="#" class="edicion__link">2017</a></li>
-              <li class="edicion"><a href="#" class="edicion__link">2018</a></li>
-              <li class="edicion"><a href="#" class="edicion__link">2019</a></li>
+              <li class="edicion">
+                <a href="https://sites.google.com/site/workshopsistemasdelta/2015-inicio" class="edicion__link">
+                  2015
+                </a>
+              </li>
+              <li class="edicion">
+                <a href="https://sites.google.com/site/workshopsistemasdelta/2016-inicio" class="edicion__link">
+                  2016
+                </a>
+              </li>
+              <li class="edicion">
+                <a href="https://sites.google.com/site/workshopsistemasdelta/" class="edicion__link">
+                  2017
+                </a>
+              </li>
+              <li class="edicion">
+                <a href="https://workshopsistemasutnfrd.github.io/" class="edicion__link">
+                  2018
+                </a>
+              </li>
+              <li class="edicion">
+                <a href="https://sistemaseventos.frd.utn.edu.ar/2019/" class="edicion__link">
+                  2019
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -45,6 +71,7 @@
   <section class="hero">
     <div class="hero__banner-box">
       <img class="hero__banner" src="./assets/banner.jpeg" alt="Workshop Banner">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScBvmwPXSyfgEsqQ8Eef_Kx-nPmfsKhWqC3je2c7W6bXeAgPw/viewform?embedded=true" class="hero__btn">¡Inscribite!</a>
     </div>
   </section>
 
@@ -53,7 +80,7 @@
       <div class="section-heading">
         <h2 class="section-heading__title">Organización</h2>
       </div>
-      <div class="organizacion__details margin-bottom-lg">
+      <div class="organizacion__details">
         <p class="organizacion__paragraph">
           Este año adelantamos a julio el clásico <strong>Workshop de Sistemas</strong>,
           y lo hacemos en formato virtual, con <strong>exposiciones en vivo, videos e
@@ -70,7 +97,7 @@
           Como siempre, haremos <strong>sorteos de premios sorpresa</strong> entre todos los inscriptos presentes. 
         </p>
       </div>
-      <a href="#" class="organizacion__transmision">
+      <a href="https://www.youtube.com/channel/UCru5ORwpLUvr0YvuHn23vEA" class="organizacion__transmision">
         <img
           class="organizacion__transmision--channel"
           src="./assets/youtube.svg"
@@ -83,7 +110,7 @@
       </a>
     </section>
 
-    <section class="section-programa">
+    <section class="section-programa" id="programa">
       <div class="section-heading">
         <h2 class="section-heading__title">Programa</h2>
       </div>
@@ -123,7 +150,7 @@
               <tr>
                 <td></td>
                 <td>Charla</td>
-                <td>Mujer y Tecnología, como nos enamoramos?</td>
+                <td>Mujer y Tecnología, ¿cómo nos enamoramos?</td>
                 <td>Marina Sanchez</td>
               </tr>
               <tr>
@@ -232,13 +259,13 @@
               <tr>
                 <td></td>
                 <td>Charla</td>
-                <td>Data Adquisition</td>
+                <td>Data Acquisition</td>
                 <td>Sebastían Pignataro</td>
               </tr>
               <tr>
                 <td></td>
                 <td>Charla</td>
-                <td>Teletrabajo y Teleeducación:¿Legado del Coronavirus?</td>
+                <td>Teletrabajo y Teleeducación: ¿Legado del Coronavirus?</td>
                 <td>Luis Perna</td>
               </tr>
               <tr>
@@ -261,62 +288,242 @@
         <li class="exposicion">
           <input type="checkbox" id="details-1" class="exposicion__toggle">
           <h3 class="exposicion__heading">
-            <span class="exposicion__nombre">Exposición 1</span>
+            <span class="exposicion__nombre">Desarrollo de Compiladores Just-In-Time para Todes</span>
             <span class="exposicion__separator">|</span>
-            <span class="exposicion__presentador">Juan García</span>
+            <span class="exposicion__presentador">Pablo Tesone</span>
           </h3>
           <label for="details-1" class="exposicion__toggle-button">
             <span class="exposicion__toggle-line"></span>
           </label>
           <div class="exposicion__details">
-            <p>Lorems ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque architecto odio, vero tempora, laboriosam exercitationem quos cumque velit illo distinctio id numquam itaque aliquid aliquam qui est veritatis? Aspernatur expedita possimus aut doloremque enim et reiciendis eligendi soluta odit ducimus illum ipsum totam cupiditate earum, necessitatibus dolores facere officia quas corporis eos maxime consequuntur. Corrupti numquam, architecto consequatur dolore ipsum tempora alias blanditiis illo doloremque deserunt modi, rerum provident ab dicta? Dolore aliquid obcaecati hic iure laudantium corporis in.
+            <p>
+              El uso de compiladores Just-in-Time (JIT) permite mejorar el desempeño de maquinas virtuales (VM) basadas en intérpretes de bytecodes. El compilador JIT traduce los métodos desde el bytecode a código de máquina ejecutable, realizando en la transformación una serie de optimizaciones (ej: utilización de registros en lugar del stack de ejecución) que pueden hacer uso de las particularidades de una determinada arquitectura de procesador. Es común que dichas VMs corran en distintas arquitecturas y sistemas operativos, produciendo una suba en la complejidad de estos compiladores JIT.
             </p>
           </div>
         </li>
         <li class="exposicion">
           <input type="checkbox" id="details-2" class="exposicion__toggle">
           <h3 class="exposicion__heading">
-            <span class="exposicion__nombre">Exposición 2</span>
+            <span class="exposicion__nombre">Utnianes por el mundo, reto Dinamarca</span>
             <span class="exposicion__separator">|</span>
-            <span class="exposicion__presentador">Daniel Rodríguez</span>
+            <span class="exposicion__presentador">Gisela Martinez</span>
           </h3>
           <label for="details-2" class="exposicion__toggle-button">
             <span class="exposicion__toggle-line"></span>
           </label>
           <div class="exposicion__details">
-            <p>Lorems ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque architecto odio, vero tempora, laboriosam exercitationem quos cumque velit illo distinctio id numquam itaque aliquid aliquam qui est veritatis? Aspernatur expedita possimus aut doloremque enim et reiciendis eligendi soluta odit ducimus illum ipsum totam cupiditate earum, necessitatibus dolores facere officia quas corporis eos maxime consequuntur. Corrupti numquam, architecto consequatur dolore ipsum tempora alias blanditiis illo doloremque deserunt modi, rerum provident ab dicta? Dolore aliquid obcaecati hic iure laudantium corporis in.
+            <p>
+              Como alumna de la UTN-FRD y con al menos 6 años de experiencia en desarrollo de software, quisiera compartir cómo es la experiencia de mudarse a un nuevo país trabajando en sistemas sin tener pasaporte europeo. ¿Cómo se hace? ¿Por qué elegimos este camino les que lo hacemos? ¿Cuáles son las cosas que está bueno considerar a la hora de querer viajar?
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-3" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Mujer y Tecnología, ¿cómo nos enamoramos?</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Marina Sanchez</span>
+          </h3>
+          <label for="details-3" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>
+              Cuál es el lugar de las mujeres en el mundo tech actual. Porqué es importante trabajar no sólo en el descubrimiento de vocaciones tech en las adolescentes sino también en las oportunidades laborales que existen. La importancia del liderazgo y de emprender en este mundo de oportunidades.
             </p>
           </div>
         </li>
         <li class="exposicion">
           <input type="checkbox" id="details-4" class="exposicion__toggle">
           <h3 class="exposicion__heading">
-            <span class="exposicion__nombre">Exposición 4</span>
+            <span class="exposicion__nombre">Automatización Industrial e Industria 4.0</span>
             <span class="exposicion__separator">|</span>
-            <span class="exposicion__presentador">Claudio Pérez</span>
+            <span class="exposicion__presentador">Martin Acciari</span>
           </h3>
           <label for="details-4" class="exposicion__toggle-button">
             <span class="exposicion__toggle-line"></span>
           </label>
           <div class="exposicion__details">
-            <p>Lorems ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque architecto odio, vero tempora, laboriosam exercitationem quos cumque velit illo distinctio id numquam itaque aliquid aliquam qui est veritatis? Aspernatur expedita possimus aut doloremque enim et reiciendis eligendi soluta odit ducimus illum ipsum totam cupiditate earum, necessitatibus dolores facere officia quas corporis eos maxime consequuntur. Corrupti numquam, architecto consequatur dolore ipsum tempora alias blanditiis illo doloremque deserunt modi, rerum provident ab dicta? Dolore aliquid obcaecati hic iure laudantium corporis in.
+            <p>
+              Sistemas de control, manipulación y automatización Industrial. Sistemas de control típicos (PLCs), sensores y actuadores – Integración con la 4ta revolución industrial y componentes que la representan.
             </p>
           </div>
         </li>
         <li class="exposicion">
           <input type="checkbox" id="details-5" class="exposicion__toggle">
           <h3 class="exposicion__heading">
-            <span class="exposicion__nombre">Exposición 5</span>
+            <span class="exposicion__nombre">Proyecto de Cátedra - Simpli IT</span>
             <span class="exposicion__separator">|</span>
-            <span class="exposicion__presentador">Néstor García</span>
+            <span class="exposicion__presentador">Pasinato, De Gregorio, Ríos</span>
           </h3>
           <label for="details-5" class="exposicion__toggle-button">
             <span class="exposicion__toggle-line"></span>
           </label>
           <div class="exposicion__details">
-            <p>Lorems ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque architecto odio, vero tempora, laboriosam exercitationem quos cumque velit illo distinctio id numquam itaque aliquid aliquam qui est veritatis? Aspernatur expedita possimus aut doloremque enim et reiciendis eligendi soluta odit ducimus illum ipsum totam cupiditate earum, necessitatibus dolores facere officia quas corporis eos maxime consequuntur. Corrupti numquam, architecto consequatur dolore ipsum tempora alias blanditiis illo doloremque deserunt modi, rerum provident ab dicta? Dolore aliquid obcaecati hic iure laudantium corporis in.
+            <p>
+              Una introducción al diseño de una aplicación mobile y su implementación, llevado a cabo por tres estudiantes de la UTN. Se realizará una descripción de sus principales características y funcionalidades que la distinguen.
             </p>
           </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-6" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Melidata: Big Data en Mercado Libre</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Esteban Tundidor</span>
+          </h3>
+          <label for="details-6" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>
+              En MeLi recopilamos miles de millones de datos todos los días. Voy a compartir un breve repaso de como los usamos para crear nuevos productos basados en datos o mejorar los que ya tenemos y cómo los datos forman parte de nuestro ciclo de desarrollo.
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-7" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Proyecto Final - Lopromatic: Automatización de depósitos para Retail</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Prego, De Gesus, Marconi</span>
+          </h3>
+          <label for="details-7" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <!-- <div class="exposicion__details">
+            <p>
+             
+            </p>
+          </div> -->
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-8" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Distribución de Internet</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Victor Smigliani</span>
+          </h3>
+          <label for="details-8" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <!-- <div class="exposicion__details">
+            <p>
+              
+            </p>
+          </div> -->
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-9" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Arquitectura en compañías caórdicas</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Julián Werba</span>
+          </h3>
+          <label for="details-9" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>
+              En organizaciones caórdicas y de gran crecimiento en donde la flexibilidad y la velocidad son necesarios para mantenerse innovadoras hay decisiones de arquitectura que pueden hacer una gran diferencia: ¿Qué tipo de tecnologías, infraestructura y servicios la organización nos brinda para facilitar la rapidez? ¿Qué tipo de estilos arquitectónicos favorecen y permiten mayor libertad para incrementar la creatividad e innovación? ¿Cuales son los trade-offs de esas decisiones?
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-10" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Profesionales de UTN en el mundo</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Rosana Araya</span>
+          </h3>
+          <label for="details-10" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>
+              Experiencia profesional en el exterior contada en primera persona.
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-11" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Una empresa sin jefes</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Jorge Silva</span>
+          </h3>
+          <label for="details-11" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>
+              ¿Es el fin de los “jefes” como los conocemos hoy en día? ¿Puede una organización adaptarse y funcionar sin jefes? ¿Significa esto también el fin de los líderes? ¿Cómo se pueden llevar los valores y principios ágiles a la gestión de una empresa?
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-12" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Tips & Tricks para insertarse en el mundo de IT</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Rocío Borda</span>
+          </h3>
+          <label for="details-12" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>
+              Desde la perspectiva del área Soft de reclutamiento IT, compartiremos en detalle las mejores prácticas para incorporarse en el mundo de IT a nivel local e internacional. Perfiles más buscados, tendencias, empresas target, y procesos de selección en la práctica.
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-13" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Proyecto Final - Device Sense: Monitoreo y mantenimiento de dispositivos industriales</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Denis, Amigo, García, Gallardo</span>
+          </h3>
+          <label for="details-13" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>
+              En la actualidad, las diferentes empresas proveedoras de dispositivos industriales brindan un servicio de monitoreo y mantenimiento a través de internet. La gran desventaja de este modelo es su costo y que además solo se limita a los dispositivos de ese fabricante. El objetivo de “Device Sense” es brindar este servicio a través de una aplicación web, que sea compatible con los diferentes dispositivos de una planta industrial. Esta aplicación se encargará de adquirir datos, y luego procesarlos para generar en tiempo real: alarmas, advertencias e informes acerca del funcionamiento de los dispositivos para facilitar el mantenimiento y supervisar el proceso desde cualquier lugar del mundo. El principal beneficio de utilizar Device Sense es la estandarización del servicio para varios dispositivos, sin importar su tipo ni su fabricante, por ejemplo, distintos PLC, DCS, robots industriales, etc., con un costo relativamente menor al que se paga por los servicios oficiales de los proveedores de los dispositivos.
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-14" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Software Data Acquisition</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Sebastián Pignataro</span>
+          </h3>
+          <label for="details-14" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <div class="exposicion__details">
+            <p>
+              Introducción al modelo informático para la adquisición de datos, tratamiento y herramientas para llevar a cabo el procedimiento. Se presentarán conceptos básicos y asociados al tipo de solución, definiciones y descripciones del algoritmo aplicado, metodologías de extracción de datos, diferenciación sobre el concepto de información y vista general del sistema con foco en el mejoramiento continuo y la toma de decisiones.
+            </p>
+          </div>
+        </li>
+        <li class="exposicion">
+          <input type="checkbox" id="details-15" class="exposicion__toggle">
+          <h3 class="exposicion__heading">
+            <span class="exposicion__nombre">Teletrabajo y Teleeducación: ¿Legado del Coronavirus?</span>
+            <span class="exposicion__separator">|</span>
+            <span class="exposicion__presentador">Luis Perna</span>
+          </h3>
+          <label for="details-15" class="exposicion__toggle-button">
+            <span class="exposicion__toggle-line"></span>
+          </label>
+          <!-- <div class="exposicion__details">
+            <p>
+              
+            </p>
+          </div> -->
         </li>
       </ul>
     </section>
@@ -478,7 +685,7 @@
   </main>
 
   <footer class="footer">
-    To do...
+    UTN FRD - 2020
   </footer>
 </body>
 </html>
